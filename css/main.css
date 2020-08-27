@@ -54,3 +54,22 @@ body {
     .grid-contents .contents__right .menu:hover {
       background-color: #af7732;
       color: white; }
+  .grid-contents .contents__center div:nth-child(2) {
+    border-bottom: 1px solid #af7732;
+    border-top: 1px solid #af7732; }
+  .grid-contents .contents__center .image {
+    background-image: url("../img/1.gif");
+    background-size: cover;
+    background-position: center; }
+  .grid-contents .contents__center .scrolling__text {
+    white-space: nowrap;
+    overflow: hidden; }
+    .grid-contents .contents__center .scrolling__text span {
+      animation: scrollText 15s linear infinite;
+      transition: all .3s linear; }
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(50%); }
+  100% {
+    transform: translateX(-50%); } }

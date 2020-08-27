@@ -62,4 +62,34 @@ body {
             }
         }
     }
+    .contents__center {
+        div {
+            &:nth-child(2) {
+                border-bottom: 1px solid $bg;
+                border-top: 1px solid $bg;
+            }
+        }
+        .image {
+            background-image: url("../img/1.gif");
+            background-size: cover;
+            background-position: center;
+        }
+        .scrolling__text {
+            white-space: nowrap;
+            overflow: hidden;
+            span {
+                animation: scrollText 15s linear infinite;
+                transition: all .3s linear;
+            }
+        }
+    }
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
